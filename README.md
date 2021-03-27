@@ -25,3 +25,21 @@ REST 방식
 ```
 ![image](https://user-images.githubusercontent.com/59327680/112715333-f232af00-8f22-11eb-8001-453d69a25a4a.png)![image](https://user-images.githubusercontent.com/59327680/112715388-39b93b00-8f23-11eb-819f-44dfd6b054d5.png)
 
+
+
+
+```{.java}
+	@GetMapping(value = "/getMap")
+	public Map<String, SampleVO> getMap() {
+
+		Map<String, SampleVO> map = new HashMap<>();
+		map.put("First", new SampleVO(111, "그루트", "주니어"));
+
+		return map;
+
+	}
+	map을 이용하는 경우 key에 해당하는 데이터는 xml로 변환되는 경우 태그의 이름이 된다
+```
+![image](https://user-images.githubusercontent.com/59327680/112715583-615cd300-8f24-11eb-8396-0aa7eacee6dc.png)
+
+
