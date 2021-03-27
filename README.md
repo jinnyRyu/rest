@@ -55,7 +55,7 @@
 파라미터로 전달(ex ?)된던 데이터들이 rest방식에서는 경로의 일부로 보내어지는 경우가 많다 <br>
 rest 방식에서는 최대한 많은 정보를 url에 담으려하기 때문
 
-요청 :  http://localhost:8080/sample/product/book/11   
+요청 :  /product/book/11   
 결과 : ![image](https://user-images.githubusercontent.com/59327680/112716454-f0201e80-8f29-11eb-82bf-908c4759e077.png)
 
 
