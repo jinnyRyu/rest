@@ -11,6 +11,9 @@
 |@RequestBody|json 데이터를 원하는 타입으로 바인딩 처리|
 
 
+
+### @RestController
+
 ```{.java}
 	@GetMapping(value = "/getSample", 
 			produces = { MediaType.APPLICATION_JSON_UTF8_VALUE,
