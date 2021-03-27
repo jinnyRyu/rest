@@ -10,3 +10,18 @@ REST 방식
 |@PathVariable|url 경로에 있는 값을 파라미터로 추출할때 사용|
 |@CrossOrigin|Ajax의 크로스 도메인 문제를 해결해주는 어노테이션|
 |@RequestBody|json 데이터를 원하는 타입으로 바인딩 처리|
+
+
+```{.java}
+	@GetMapping(value = "/getSample", 
+			produces = { MediaType.APPLICATION_JSON_UTF8_VALUE,
+			MediaType.APPLICATION_XML_VALUE })
+	public SampleVO getSample() {
+
+		return new SampleVO(112, "스타", "로드");
+
+	}
+  produces는 생략가능 getSample.json 을 요청하면 json 형식의 데이터를 볼 수 있다
+```
+![image](https://user-images.githubusercontent.com/59327680/112715333-f232af00-8f22-11eb-8001-453d69a25a4a.png)![image](https://user-images.githubusercontent.com/59327680/112715388-39b93b00-8f23-11eb-819f-44dfd6b054d5.png)
+
