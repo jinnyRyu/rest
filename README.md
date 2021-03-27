@@ -1,5 +1,4 @@
-# rest
-REST 방식
+# REST
 
 ##### 서버의 역할이 점점 순순하게 데이터에 대한 처리를 목적으로 하는 형태로 진화하고 있음
 
@@ -41,5 +40,20 @@ REST 방식
 	map을 이용하는 경우 key에 해당하는 데이터는 xml로 변환되는 경우 태그의 이름이 된다
 ```
 ![image](https://user-images.githubusercontent.com/59327680/112715583-615cd300-8f24-11eb-8396-0aa7eacee6dc.png)
+
+
+
+### @PathVariable
+
+```{.java}
+	@GetMapping("/product/{cat}/{pid}")
+	public String[] getPath(@PathVariable("cat") String cat, @PathVariable("pid") Integer pid) {
+
+		return new String[] { "category: " + cat, "productid: " + pid };
+	}
+```
+파라미터로 전달(ex ?)된던 데이터들이 rest방식에서는 경로의 일부로 보내어지는 경우가 많다
+rest 방식에서는 최대한 많은 정보를 url에 담으려하기 때문
+
 
 
